@@ -50,13 +50,16 @@ Acest Facade va avea doar o singura metoda : send money
 
 ## Interfata pentru transferuri bancare:
 
-public interface interBankingTransferInterface{
-boolean pingServer();
-void openConnection();
-void closeConnection();
-void checkFunds();
-// will receive a country code : RO, UK, USA, GER,SUI, RU, etc
-boolean CheckCountryBlackList(String countryCode);
-void sendMoney();
-
+```
+public interface interBankingTransferInterface {
+    boolean pingServer();
+    void openConnection();
+    void closeConnection();
+    void checkFunds();
+    
+    // Will receive a country code : RO, UK, USA, GER,SUI, RU, etc
+    boolean CheckCountryBlackList(String countryCode);
+    void sendMoney();
 }
+
+```
